@@ -12,19 +12,15 @@ services:
     depends_on:
       - mongodb
       - redis
-    volumes:
-      - ./src:/app/src
     restart: unless-stopped
 
   mongodb:
     image: mongo:7.0
     volumes:
       - mongo_data:/data/db
-    restart: unless-stopped
 
   redis:
     image: redis:7-alpine
-    restart: unless-stopped
 
 volumes:
   mongo_data:
