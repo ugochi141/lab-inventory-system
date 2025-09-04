@@ -1,0 +1,16 @@
+{
+  "name": "lab-inventory-system",
+  "version": "1.0.0",
+  "description": "Predictive inventory system preventing stockouts",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "redis": "^4.6.10",
+    "bull": "^4.11.4"
+  }
+}
