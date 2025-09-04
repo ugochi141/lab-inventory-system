@@ -1,5 +1,18 @@
-FROM node:3.11-slim
+FROM node:18-alpine
+
 WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install dependencies
+RUN npm ci --only=production
+
+# Copy application code
 COPY . .
-RUN pip install -r requirements.txt
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+# Expose port
+EXPOSE 3000
+
+# Run the application
+CMD ["node", "src/index.js"]

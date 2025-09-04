@@ -1,26 +1,50 @@
 # lab-inventory-system
 
-Predictive inventory system preventing stockouts
+Predictive inventory management system preventing stockouts with ML forecasting
 
 ## Problem Statement
-Based on real laboratory data showing critical performance issues.
+Addresses critical healthcare operational challenges with modern web technologies.
 
-## Solution
-Production-ready system addressing specific operational challenges.
+## Features
+- RESTful API with Express.js
+- Real-time updates with WebSocket
+- MongoDB integration
+- Redis caching
+- Docker containerization
 
 ## Tech Stack
-- Backend: Python/FastAPI or Node.js/Express
-- Frontend: React/Next.js
-- Database: PostgreSQL/MongoDB
-- ML/AI: TensorFlow/scikit-learn (where applicable)
+- **Runtime**: Node.js 18+
+- **Framework**: Express.js
+- **Database**: MongoDB
+- **Cache**: Redis
+- **Queue**: Bull
+- **Testing**: Jest
 
 ## Quick Start
+
 ```bash
+# Clone the repository
+git clone https://github.com/ugochi141/lab-inventory-system.git
+cd lab-inventory-system
+
+# Run with Docker
 docker-compose up -d
+
+# Or run locally
+npm install
+npm start
 ```
 
 ## API Documentation
-Available at: http://localhost:8000/docs
+Once running, visit: http://localhost:3000/api-docs
+
+## Testing
+```bash
+npm test
+```
 
 ## License
-MIT
+MIT License - See LICENSE file for details
+
+## Author
+Ugochi Ndubuisi - Healthcare Informatics Specialist
