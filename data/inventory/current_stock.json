@@ -1,0 +1,45 @@
+{
+  "reagents": [
+    {
+      "item_code": "RG001",
+      "name": "Glucose Reagent",
+      "manufacturer": "Roche",
+      "current_stock": 45,
+      "unit": "bottles",
+      "reorder_point": 20,
+      "max_stock": 100,
+      "expiry_date": "2024-06-30",
+      "lot_number": "LOT2024001",
+      "location": "Chemistry Refrigerator A",
+      "usage_rate": 2.5
+    },
+    {
+      "item_code": "RG002",
+      "name": "CBC Control",
+      "manufacturer": "Bio-Rad",
+      "current_stock": 12,
+      "unit": "vials",
+      "reorder_point": 10,
+      "max_stock": 50,
+      "expiry_date": "2024-04-15",
+      "lot_number": "LOT2024002",
+      "location": "Hematology Refrigerator",
+      "usage_rate": 1.2
+    }
+  ],
+  "consumables": [
+    {
+      "item_code": "CS001",
+      "name": "Vacutainer Tubes - EDTA",
+      "manufacturer": "BD",
+      "current_stock": 2500,
+      "unit": "tubes",
+      "reorder_point": 1000,
+      "max_stock": 5000,
+      "expiry_date": "2025-12-31",
+      "lot_number": "LOT2024003",
+      "location": "Supply Room A",
+      "usage_rate": 125
+    }
+  ]
+}
